@@ -17,7 +17,7 @@ fi
 
 if [ -z "$GOROOT_BOOTSTRAP" ]; then
 	echo '$GOROOT_BOOTSTRAP must be set'
-	echo "If installing Go < 1.5 (in which case bootstrapping is not"
+	echo "If installing Go < 1.16.2 (in which case bootstrapping is not"
 	echo 'needed, just set $GOROOT_BOOTSTRAP to an arbitrary value'
         echo '$GOROOT_BOOTSTRAP must point to the working Go libraries,'
         echo 'e.g., $GOROOT'
@@ -77,7 +77,7 @@ do
 			echo "Usage: ./install_go_all [OPTIONS] versions..."
 			echo ""
 			echo "  Versions must be valid Go version numbers. "
-			echo "  (E.g., 1.5.3, 1.6, 1.4.2, etc.)"
+			echo "  (E.g., 1.15.3, 1.16, 1.14.2, etc.)"
 			echo ""
                         echo "Options:"
                         echo ""
