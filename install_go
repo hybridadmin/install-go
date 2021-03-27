@@ -129,7 +129,9 @@ fi
 # go was successfully downloaded and installed; set up the workspace
 mkdir -p "$workspace"
 echo export "GOPATH=$workspace" >> "$HOME/.bashrc"
-echo export "PATH=$PATH:/usr/local/go/bin:$GOPATH/bin" >> "$HOME/.bashrc"
+echo export "GOBIN=$GOPATH/bin" >> "$HOME/.bashrc"
+echo export "GOROOT=/usr/local/go" >> "$HOME/.bashrc"
+echo export "PATH=$PATH:/usr/local/go/bin:$GOBIN" >> "$HOME/.bashrc"
 source "$HOME/.bashrc"
 
 echo "complete: go $version installed"
